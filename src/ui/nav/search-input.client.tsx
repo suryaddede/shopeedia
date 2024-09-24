@@ -7,7 +7,7 @@ import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { useEffect, useState } from "react";
 
 const inputClasses = cn(
-	"min-w-14 md:max-w-72 appearance-none rounded-md border bg-white py-2 pl-4 pr-10 md:pl-2 md:pr-8 lg:pl-4 lg:pr-10 transition-opacity inline-block",
+	"min-w-14 appearance-none rounded-md border bg-white py-2 pl-4 pr-10 md:pl-2 md:pr-8 lg:pl-4 lg:pr-10 transition-opacity inline-block",
 );
 
 export const SearchInputPlaceholder = ({ placeholder }: { placeholder: string }) => {

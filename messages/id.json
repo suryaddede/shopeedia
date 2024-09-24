@@ -1,0 +1,232 @@
+{
+	"Global": {
+		"metadata": {
+			"title": "Shopeedia - Demo",
+			"description": "Template Next.js untuk membangun toko online Anda secara instan: sederhana, cepat, kuat."
+		},
+		"notFound": {
+			"title": "Tidak ditemukan",
+			"description": "Halaman yang Anda cari tidak ada.",
+			"goBackLink": "Kembali ke beranda"
+		},
+		"globalError": {
+			"title": "Terjadi kesalahan!",
+			"moreDetails": "Detail lebih lanjut",
+			"tryAgainButton": "Coba lagi"
+		},
+		"error": {
+			"title": "Ooops, terjadi kesalahan!",
+			"goBackLink": "Coba lagi"
+		},
+		"footer": {
+			"newsletterTitle": "Langganan newsletter kami",
+			"categoriesTitle": "Produk"
+		},
+		"newsletter": {
+			"emailPlaceholder": "Masukkan email Anda",
+			"subscribeButton": "Berlangganan",
+			"success": "Anda berhasil berlangganan newsletter kami.",
+			"error": "Gagal berlangganan newsletter kami."
+		},
+		"nav": {
+			"categories": {
+				"title": "Kategori",
+				"fnb": {
+					"title": "Makanan & Minuman",
+					"description": "Temukan berbagai pilihan makanan dan minuman lezat untuk kebutuhan sehari-hari dan acara spesial."
+				},
+				"furniture": {
+					"title": "Mebel",
+					"description": "Beragam mebel berkualitas untuk mempercantik ruangan rumah Anda dengan desain yang elegan dan modern."
+				},
+				"men": {
+					"title": "Fashion Pria",
+					"description": "Tampil stylish dengan koleksi fashion pria terbaru, mulai dari pakaian hingga aksesori trendi."
+				},
+				"women": {
+					"title": "Fashion Wanita",
+					"description": "Lengkapi gaya Anda dengan koleksi fashion wanita modern yang elegan dan penuh variasi."
+				},
+				"beauty": {
+					"title": "Kecantikan",
+					"description": "Produk kecantikan untuk perawatan kulit, makeup, dan tubuh agar tampil cantik dan percaya diri."
+				},
+				"health": {
+					"title": "Kesehatan",
+					"description": "Produk kesehatan untuk menjaga keseimbangan tubuh, imunitas, serta perawatan sehari-hari."
+				},
+				"computer": {
+					"title": "Komputer & Laptop",
+					"description": "Temukan perangkat komputer dan laptop terbaik untuk produktivitas, gaming, dan kebutuhan sehari-hari."
+				},
+				"phone": {
+					"title": "Ponsel & Tablet",
+					"description": "Jelajahi berbagai smartphone dan tablet canggih dengan teknologi terkini untuk menunjang aktivitas digital."
+				}
+			},
+			"search": {
+				"title": "Cari",
+				"placeholder": "Cari produk..."
+			},
+			"cartSummary": {
+				"itemsInCart": "Barang di keranjang",
+				"total": "Total",
+				"totalItems": "{count, plural, =0 {Tidak ada barang} =1 {# barang} other {# barang}} di keranjang"
+			},
+			"button": {
+				"login": "Masuk",
+				"register": "Daftar"
+			}
+		},
+		"addToCart": {
+			"success": "Berhasil menambahkan {productName} ke keranjang",
+			"actionButton": "Tambahkan ke keranjang",
+			"disabled": "Stok habis"
+		},
+		"deliveryEstimates": {
+			"atLeast": "Minimal",
+			"upTo": "Hingga",
+			"businessDay": "{count, plural, =1 {# hari kerja} other {# hari kerja}}",
+			"day": "{count, plural, =1 {# hari} other {# hari}}",
+			"hour": "{count, plural, =1 {# jam} other {# jam}}",
+			"month": "{count, plural, =1 {# bulan} other {# bulan}}",
+			"week": "{count, plural, =1 {# minggu} other {# minggu}}"
+		}
+	},
+	"/": {
+		"hero": {
+			"title": "Temukan Koleksi Terbaik Kami",
+			"description": "Jelajahi produk pilihan kami untuk rumah dan gaya hidup Anda.",
+			"action": "Belanja Sekarang",
+			"link": "/category/aksesoris"
+		}
+	},
+	"/search": {
+		"notFound": {
+			"title": "Tidak Ada Hasil untuk \"{query}\"",
+			"description": "Maaf, kami tidak menemukan hasil yang sesuai dengan pencarian Anda. Silakan coba cari dengan kata kunci lain."
+		},
+		"metadata": {
+			"title": "Cari: {query} · Shopeedia"
+		},
+		"page": {
+			"title": "Mencari \"{query}\""
+		},
+		"loading": {
+			"title": "Mencari"
+		}
+	},
+	"/products": {
+		"metadata": {
+			"title": "Semua Produk · Shopeedia"
+		},
+		"page": {
+			"title": "Semua Produk"
+		}
+	},
+	"/product": {
+		"metadata": {
+			"title": "{productName} · Shopeedia"
+		},
+		"page": {
+			"allProducts": "Semua produk",
+			"imagesTitle": "Gambar",
+			"descriptionTitle": "Deskripsi",
+			"variantTitle": "Varian"
+		}
+	},
+	"/category": {
+		"metadata": {
+			"title": "Kategori {categoryName} · Shopeedia"
+		},
+		"page": {
+			"title": "Kategori: {categoryName}"
+		}
+	},
+	"/cart": {
+		"modal": {
+			"title": "Keranjang Belanja",
+			"openFullView": "(lihat secara lengkap)",
+			"quantity": "Jumlah: {quantity}",
+			"total": "Total",
+			"shippingAndTaxesInfo": "Pengiriman dan pajak akan ditambahkan pada langkah berikutnya",
+			"goToPaymentButton": "Lanjut ke pembayaran"
+		},
+		"metadata": {
+			"title": "Keranjang Belanja · Shopeedia"
+		},
+		"page": {
+			"title": "Keranjang Anda",
+			"checkoutTitle": "Checkout",
+			"checkoutDescription": "Isi detail penagihan dan pengiriman di bawah ini.",
+			"summaryTable": {
+				"imageCol": "Gambar",
+				"productCol": "Produk",
+				"priceCol": "Harga",
+				"quantityCol": "Jumlah",
+				"totalCol": "Total",
+				"totalSummary": "TOTAL"
+			},
+			"stripePayment": {
+				"fillRequiredFields": "Harap isi kolom yang diperlukan.",
+				"unexpectedError": "Terjadi kesalahan tak terduga.",
+				"billingSameAsShipping": "Alamat penagihan sama dengan pengiriman",
+				"billingAddressTitle": "Alamat penagihan",
+				"payNowButton": "Bayar sekarang",
+				"errorTitle": "Kesalahan",
+				"fullName": "Nama lengkap",
+				"address1": "Alamat",
+				"address2": "Alamat (lanjutan)",
+				"postalCode": "Kode Pos",
+				"city": "Kota",
+				"state": "Provinsi / Wilayah",
+				"country": "Negara",
+				"phone": "Nomor telepon",
+				"taxId": "NPWP",
+				"taxIdPlaceholder": "contoh: PL123456789"
+			},
+			"formErrors": {
+				"nameRequired": "Nama diperlukan",
+				"cityRequired": "Kota diperlukan",
+				"countryRequired": "Negara diperlukan",
+				"line1Required": "Alamat diperlukan",
+				"postalCodeRequired": "Kode pos diperlukan"
+			}
+		},
+		"empty": {
+			"title": "Keranjang Anda kosong",
+			"description": "Sepertinya Anda belum menambahkan apapun ke keranjang Anda.",
+			"continueShoppingButton": "Lanjutkan belanja"
+		}
+	},
+	"/order": {
+		"metadata": {
+			"title": "Konfirmasi Pesanan · Shopeedia"
+		},
+		"page": {
+			"title": "Konfirmasi Pesanan",
+			"description": "Terima kasih! Detail pesanan Anda dapat dilihat di bawah.",
+			"orderNumberTitle": "Nomor pesanan",
+			"productsTitle": "Produk dalam pesanan ini",
+			"price": "Harga",
+			"quantity": "Jumlah",
+			"total": "Total",
+			"detailsTitle": "Detail pesanan",
+			"shippingAddress": "Alamat pengiriman",
+			"billingAddress": "Alamat penagihan",
+			"taxId": "NPWP",
+			"paymentMethod": "Metode pembayaran",
+			"cardBrand": "Merek kartu",
+			"last4CardDigitsLabel": "Nomor kartu berakhir pada"
+		},
+		"paymentStatus": {
+			"canceled": "Dibatalkan",
+			"processing": "Sedang diproses",
+			"requires_action": "Memerlukan Tindakan",
+			"requires_capture": "Memerlukan Konfirmasi",
+			"requires_confirmation": "Memerlukan Konfirmasi",
+			"requires_payment_method": "Memerlukan Metode Pembayaran",
+			"succeeded": "Berhasil"
+		}
+	}
+}

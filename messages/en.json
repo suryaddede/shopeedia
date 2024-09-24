@@ -1,7 +1,7 @@
 {
 	"Global": {
 		"metadata": {
-			"title": "Your Next Store - Demo",
+			"title": "Shopeedia - Demo",
 			"description": "A Next.js boilerplate for building your online store instantly: simple, quick, powerful."
 		},
 		"notFound": {
@@ -29,6 +29,41 @@
 			"error": "Failed to subscribe to our newsletter."
 		},
 		"nav": {
+			"categories": {
+				"title": "Categories",
+				"fnb": {
+					"title": "Food & Beverages",
+					"description": "Discover a variety of delicious food and drinks for everyday needs and special occasions."
+				},
+				"furniture": {
+					"title": "Furniture",
+					"description": "A wide range of quality furniture to enhance your home with elegant and modern designs."
+				},
+				"men": {
+					"title": "Men's Wear",
+					"description": "Stay stylish with the latest men's fashion collection, from clothing to trendy accessories."
+				},
+				"women": {
+					"title": "Women's Wear",
+					"description": "Complete your style with a modern, elegant women's fashion collection full of variety."
+				},
+				"beauty": {
+					"title": "Beauty",
+					"description": "Beauty products for skin care, makeup, and body care to look beautiful and confident."
+				},
+				"health": {
+					"title": "Health",
+					"description": "Health products to maintain body balance, immunity, and daily care."
+				},
+				"computer": {
+					"title": "Computers & Laptops",
+					"description": "Find the best computers and laptops for productivity, gaming, and daily needs."
+				},
+				"phone": {
+					"title": "Phones & Tablets",
+					"description": "Discover the latest smartphones, tablets, and accessories for your daily communication needs."
+				}
+			},
 			"search": {
 				"title": "Search",
 				"placeholder": "Search for products…"
@@ -37,6 +72,10 @@
 				"itemsInCart": "Items in cart",
 				"total": "Total",
 				"totalItems": "{count, plural, =0 {No items} =1 {# item} other {# items}} in cart"
+			},
+			"button": {
+				"login": "Login",
+				"register": "Register"
 			}
 		},
 		"addToCart": {
@@ -68,7 +107,7 @@
 			"description": "Sorry, we couldn't find any results that match your search query. Please try refining your search."
 		},
 		"metadata": {
-			"title": "Search: {query} · Your Next Store"
+			"title": "Search: {query} · Shopeedia"
 		},
 		"page": {
 			"title": "Searching for \"{query}\""
@@ -79,7 +118,7 @@
 	},
 	"/products": {
 		"metadata": {
-			"title": "All Products · Your Next Store"
+			"title": "All Products · Shopeedia"
 		},
 		"page": {
 			"title": "All Products"
@@ -87,7 +126,7 @@
 	},
 	"/product": {
 		"metadata": {
-			"title": "{productName} · Your Next Store"
+			"title": "{productName} · Shopeedia"
 		},
 		"page": {
 			"allProducts": "All products",
@@ -98,7 +137,7 @@
 	},
 	"/category": {
 		"metadata": {
-			"title": "{categoryName} Category · Your Next Store"
+			"title": "{categoryName} Category · Shopeedia"
 		},
 		"page": {
 			"title": "Category: {categoryName}"
@@ -114,7 +153,7 @@
 			"goToPaymentButton": "Go to payment"
 		},
 		"metadata": {
-			"title": "Shopping Cart · Your Next Store"
+			"title": "Shopping Cart · Shopeedia"
 		},
 		"page": {
 			"title": "Your cart",
@@ -162,7 +201,7 @@
 	},
 	"/order": {
 		"metadata": {
-			"title": "Order Confirmation · Your Next Store"
+			"title": "Order Confirmation · Shopeedia"
 		},
 		"page": {
 			"title": "Order Confirmation",
