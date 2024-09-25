@@ -12,42 +12,42 @@ const t = await getTranslations("Global.nav.categories");
 const categories: { title: string; href: string; description: string }[] = [
 	{
 		title: t("fnb.title"),
-		href: "/fnb",
+		href: "/category/fnb",
 		description: t("fnb.description"),
 	},
 	{
 		title: t("furniture.title"),
-		href: "/furniture",
+		href: "/category/furniture",
 		description: t("furniture.description"),
 	},
 	{
 		title: t("men.title"),
-		href: "/men",
+		href: "/category/men",
 		description: t("men.description"),
 	},
 	{
 		title: t("women.title"),
-		href: "/women",
+		href: "/category/women",
 		description: t("women.description"),
 	},
 	{
 		title: t("beauty.title"),
-		href: "/beauty",
+		href: "/category/beauty",
 		description: t("beauty.description"),
 	},
 	{
 		title: t("health.title"),
-		href: "/health",
+		href: "/category/health",
 		description: t("health.description"),
 	},
 	{
 		title: t("computer.title"),
-		href: "/computer",
+		href: "/category/computer",
 		description: t("computer.description"),
 	},
 	{
 		title: t("phone.title"),
-		href: "/phone",
+		href: "/category/phone",
 		description: t("phone.description"),
 	},
 ];
