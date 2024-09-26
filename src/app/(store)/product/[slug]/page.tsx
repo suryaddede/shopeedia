@@ -11,7 +11,9 @@ import {
 	BreadcrumbPage,
 	BreadcrumbSeparator,
 } from "@/ui/shadcn/breadcrumb";
+import { Button } from "@/ui/shadcn/button";
 import { YnsLink } from "@/ui/yns-link";
+import { SignInButton, SignedIn, SignedOut } from "@clerk/nextjs";
 import * as Commerce from "commerce-kit";
 import { getLocale, getTranslations } from "next-intl/server";
 import Image from "next/image";
@@ -187,8 +189,14 @@ export default async function SingleProductPage({
 							</ul>
 						</div>
 					)}
-
-					<AddToCartButton productId={product.id} disabled={product.metadata.stock <= 0} />
+					<SignedOut>
+						<Button className="rounded-full text-xl py-5">
+							<SignInButton mode="modal" />
+						</Button>
+					</SignedOut>
+					<SignedIn>
+						<AddToCartButton productId={product.id} disabled={product.metadata.stock <= 0} />
+					</SignedIn>
 				</div>
 			</div>
 			<JsonLd jsonLd={mappedProductToJsonLd(product)} />

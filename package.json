@@ -16,6 +16,7 @@
 		"docker:run": "docker run -d -p 3000:3000 yournextstore"
 	},
 	"dependencies": {
+		"@clerk/nextjs": "5.6.2",
 		"@next/mdx": "15.0.0-canary.162",
 		"@radix-ui/react-checkbox": "1.1.1",
 		"@radix-ui/react-collapsible": "1.1.0",

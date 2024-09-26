@@ -1,6 +1,7 @@
 import "@/app/globals.css";
 import { env, publicUrl } from "@/env.mjs";
 import { Toaster } from "@/ui/shadcn/sonner";
+import { ClerkProvider } from "@clerk/nextjs";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import type { Metadata } from "next";
@@ -22,25 +23,27 @@ export default async function RootLayout({ children }: Readonly<{ children: Reac
 	const messages = await getMessages();
 
 	return (
-		<html lang={locale} className="h-full antialiased">
-			<body className="flex min-h-full flex-col">
-				<NextIntlClientProvider messages={messages}>
-					<div className="flex min-h-full flex-1 flex-col bg-white" vaul-drawer-wrapper="">
-						{children}
-					</div>
-					<Toaster position="top-center" offset={10} />
-				</NextIntlClientProvider>
-				{env.NEXT_PUBLIC_UMAMI_WEBSITE_ID && (
-					<Script
-						async
-						src="/stats/script.js"
-						data-host-url={publicUrl + "/stats"}
-						data-website-id={env.NEXT_PUBLIC_UMAMI_WEBSITE_ID}
-					/>
-				)}
-				<SpeedInsights />
-				<Analytics />
-			</body>
-		</html>
+		<ClerkProvider>
+			<html lang={locale} className="h-full antialiased">
+				<body className="flex min-h-full flex-col">
+					<NextIntlClientProvider messages={messages}>
+						<div className="flex min-h-full flex-1 flex-col bg-white" vaul-drawer-wrapper="">
+							{children}
+						</div>
+						<Toaster position="top-center" offset={10} />
+					</NextIntlClientProvider>
+					{env.NEXT_PUBLIC_UMAMI_WEBSITE_ID && (
+						<Script
+							async
+							src="/stats/script.js"
+							data-host-url={publicUrl + "/stats"}
+							data-website-id={env.NEXT_PUBLIC_UMAMI_WEBSITE_ID}
+						/>
+					)}
+					<SpeedInsights />
+					<Analytics />
+				</body>
+			</html>
+		</ClerkProvider>
 	);
 }
