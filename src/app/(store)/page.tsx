@@ -1,7 +1,4 @@
 import { publicUrl } from "@/env.mjs";
-import AccessoriesImage from "@/images/accessories.jpg";
-import ApparelImage from "@/images/apparel.jpg";
-import { CategoryBox } from "@/ui/category-box";
 import { ProductList } from "@/ui/products/product-list";
 import { YnsLink } from "@/ui/yns-link";
 import * as Commerce from "commerce-kit";
@@ -34,13 +31,13 @@ export default async function Home() {
 						</YnsLink>
 					</div>
 					<Image
-						alt="Cup of Coffee"
+						alt="Xiaomi Curved Gaming Monitor G34WQI"
 						loading="eager"
 						priority={true}
 						className="rounded"
 						height={450}
 						width={450}
-						src="https://files.stripe.com/links/MDB8YWNjdF8xT3BaeG5GSmNWbVh6bURsfGZsX3Rlc3RfaDVvWXowdU9ZbWlobUIyaHpNc1hCeDM200NBzvUjqP"
+						src="https://d1wqzb5bdbcre6.cloudfront.net/0f9c37dd341d67d18dc7b4d5cab92e82b457bd3b8565ad9083502a36f920da4f/68747470733a2f2f66696c65732e7374726970652e636f6d2f6c696e6b732f4d44423859574e6a64463878555449324f4764464d565254536d78765158684266475a735833526c633352666546644a6556465363586f77544652346130646f4e6e557759555932546c64683030796c6f4a3970586e"
 						style={{
 							objectFit: "cover",
 						}}
@@ -50,17 +47,6 @@ export default async function Home() {
 			</section>
 
 			<ProductList products={products} />
-
-			<section className="w-full py-8">
-				<div className="grid gap-8 lg:grid-cols-2">
-					{[
-						{ categorySlug: "accessories", src: AccessoriesImage },
-						{ categorySlug: "apparel", src: ApparelImage },
-					].map(({ categorySlug, src }) => (
-						<CategoryBox key={categorySlug} categorySlug={categorySlug} src={src} />
-					))}
-				</div>
-			</section>
 		</main>
 	);
 }
