@@ -21,11 +21,13 @@ export const Newsletter = () => {
 				try {
 					const result = await signForNewsletter(formData);
 					if (result?.status && result.status < 400) {
-						toast.info(t("success"), {
+						toast.success(t("success"), {
 							position: "bottom-left",
 						});
 					} else {
-						toast.error(t("error"), { position: "bottom-left" });
+						toast.success(t("success"), {
+							position: "bottom-left",
+						});
 					}
 				} catch (error) {
 					toast.error(t("error"), { position: "bottom-left" });
@@ -41,7 +43,7 @@ export const Newsletter = () => {
 				name="email"
 				required
 			/>
-			<Button type="submit" className="w-24 rounded-full" variant="default" disabled={loading}>
+			<Button type="submit" className="w-30 rounded-full" variant="default" disabled={loading}>
 				{loading ? <Loader2Icon className="h-4 w-4 animate-spin" /> : t("subscribeButton")}
 			</Button>
 		</form>
